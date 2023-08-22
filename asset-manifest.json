@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bastian392/Reactnpm/static/css/main.e5ab1fa6.css",
+    "main.js": "/Bastian392/Reactnpm/static/js/main.cff4589e.js",
+    "index.html": "/Bastian392/Reactnpm/index.html",
+    "main.e5ab1fa6.css.map": "/Bastian392/Reactnpm/static/css/main.e5ab1fa6.css.map",
+    "main.cff4589e.js.map": "/Bastian392/Reactnpm/static/js/main.cff4589e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5ab1fa6.css",
+    "static/js/main.cff4589e.js"
+  ]
+}
