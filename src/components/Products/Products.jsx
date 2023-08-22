@@ -12,9 +12,9 @@ export const Products = () => {
   };
 
   return (
-    <div className="container-items">
+    <div className='container-items'>
       {data.map((product) => (
-        <>
+        <><div>
           <Link
             className="item"
             key={product.id}
@@ -31,6 +31,7 @@ export const Products = () => {
             <button onClick={() => onAddProduct(product)}>
               Añadir al carrito
             </button>
+          </div>
           </div>
         </>
       ))}

@@ -1,5 +1,5 @@
-import { useState, useContext, useEffect } from 'react';
-import { CartContext } from '../context/CartContext';
+import React, { useState, useContext, useEffect } from 'react';
+import { CartContext } from '../../context/CartContext';
 
 export const CartWidget = () => {
 
@@ -24,29 +24,14 @@ export const CartWidget = () => {
   
 	const onDeleteProduct = product => {
 		deleteProduct(product)
-/* 		const results = cartProducts.filter(
-			item => item.id !== product.id
-		);
-
-		setTotal(totalPrice - product.price * product.quantity);
-		setproductCount(productCount - product.quantity);
-		setcartProducts(results); */
 	};
 
 	const onCleanCart = () => {
 		clearCart()
-/* 		setcartProducts([]);
-		setTotal(0);
-		setproductCount(0); */
 	};  
-
-	const onChangeQuantity = (input) => {
-		console.log('input.target', input)
-
-	}
-
+	
 	return (
-		<div className="cart">
+		<div className="">
 			<div className='container-icon'>
 				<div
 					className='container-cart-icon'
@@ -82,8 +67,9 @@ export const CartWidget = () => {
 								{cartProducts.map(product => (
 									<div className='cart-product' key={product.id}>
 										<div className='info-cart-product'>
-											<input itemID={product.id} type='number' className='cantidad-producto-carrito' value={product.quantity} onChange={(product) => onChangeQuantity(product)}/>
-											
+										<span className='cantidad-producto-carrito'>
+												{product.quantity}
+											</span>
 											<p className='titulo-producto-carrito'>
 												{product.nameProduct}
 											</p>

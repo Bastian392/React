@@ -1,25 +1,29 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import { useParams } from 'react-router-dom';
 import { data } from '../data/data';
+import { CartContext } from "../../context/CartContext";
 
 const Product = () => {
   console.log('useParams.id', useParams().id)
   const productId = parseInt(useParams().id)
   const [product, setProduct] = useState({img:'',nameProduct:'', price:''})
+  const { addProduct } = useContext(CartContext);
+
 
   useEffect(()=>{
-
     setProduct(data.find(pr => pr.id === productId))
   },[product])
 
-  const onAddProduct = () => {
-    console.log('hice click en añadir')
-  }
+  const onAddProduct = (product) => {
+    addProduct(product);
+    console.log(product);
+  };
   return (
-    <div style={{maxWidth:'80%'}}>
+    <div className='container-items-alone'>
+      <div className="item">
        <figure>
             <img src={product.img} alt={product.nameProduct} />
-          </figure>
+       </figure>
           <div className="info-product">
             <h2>{product.nameProduct}</h2>
             <p className="price">${product.price}</p>
@@ -27,6 +31,7 @@ const Product = () => {
               Añadir al carrito
             </button>
           </div>
+      </div>
     </div>
   )
 }

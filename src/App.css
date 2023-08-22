@@ -16,7 +16,11 @@
         --bs-navbar-brand-color: pink !important;
     }
   }
-  
+  .bg-light {
+	margin-bottom: 5%;
+  }
+
+
   /* Estilos generales */
   body {
     background-color: var(--bg-color);
@@ -164,6 +168,12 @@ img {
 	gap: 20px;
 }
 
+.container-items-alone {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
 .item {
 	border-radius: 10px;
 }
@@ -186,6 +196,10 @@ img {
 
 .item:hover img {
 	transform: scale(1.2);
+}
+
+link .item figure {
+	overflow: hidden;
 }
 
 .info-product {
@@ -240,3 +254,7 @@ img {
   transform: scale(1.03);
   border-radius: 0;
 }
+
+/* ***************************************************** */
+
+
