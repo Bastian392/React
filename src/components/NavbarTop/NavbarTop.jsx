@@ -1,5 +1,5 @@
 import ModoNoche from "../ModoNoche/ModoNoche";
-import { CartWidget } from "../CarroDeCompras/CartWidget";
+import { CartWidget } from "../CartWidget/CartWidget";
 import React from "react";
 import {NavLink} from "react-router-dom";
 import "./NavbarTop.css";

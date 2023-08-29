@@ -3,3 +3,6 @@
     color: var(--text-color);
   }
   
+  .Carousel-Item {
+    max-height: 600px;
+  }

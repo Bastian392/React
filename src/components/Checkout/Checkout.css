@@ -1,0 +1,74 @@
+/* Estilos generales del contenedor del carrito */
+.cart-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para cada producto en el carrito */
+ .cart-product-checkout {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+ .cart-product-checkout img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+ .cart-product-checkout .product-details {
+    flex-grow: 1;
+  }
+  
+ .cart-product-checkout .product-details p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+ .cart-product-checkout .product-details span {
+    font-size: 18px;
+  }
+  
+  /* Estilos para el botón "Vaciar Carrito" */
+  .btn-clear-all-checkout {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-clear-all-checkout:hover {
+    background-color: #e54c2a;
+  }
+  
+  /* Estilos para el mensaje de carrito vacío */
+  .cart-empty-checkout {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  /* Estilos para el total */
+  .cart-total-checkout {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el ícono de eliminación */
+  .icon-close-checkout {
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-close-checkout:hover {
+    color: #e54c2a;
+  }
