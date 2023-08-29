@@ -1,6 +1,10 @@
-El proyecto actual consiste en un E-commerce con productos extraidos desde una data.
-Para este proyecto ocupe una repo con la data ya lista para extraer sus datos.
+El proyecto actual consiste en un E-commerce con productos extraidos desde una data creada en Firebase
+Los productos se listan en .map de la data Firebase.
+Luego cada producto tiene su propia URL ligada al ID del producto proporcionada por Firebase.
+El carrito se utiliza mediante useContext y se aloja en un localStorage la cantidad de productos agregados.
 
-Se presentan de manera grupal o unitaria dando click en la imagen del producto.
-
-Se añade un carro de compras un poco mas intuitivo y rapido, pero consigo trae algunas fallas que por tiempo no pude corregir.
+Quedan pendiente: 
+Uso de localStorage en el componente ModoNoche
+Mejor manejo de colores mediante Variables
+Pulir CSS
+Optimizacion de codigo.
